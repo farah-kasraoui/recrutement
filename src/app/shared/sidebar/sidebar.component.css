@@ -1,0 +1,51 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Largeur de la barre latérale */
+    height: 100%; /* Hauteur de la barre latérale */
+    background-color: #e6eaee; /* Couleur de fond de la barre latérale */
+    padding-top: 20px; /* Espacement du haut */
+}
+
+.logo {
+    text-align: center; /* Centrer le contenu du logo */
+    margin-bottom: 20px; /* Espacement en bas du logo */
+}
+
+.logo img {
+    max-width: 60%; /* Largeur maximale de l'image du logo */
+    height: auto; /* Hauteur automatique de l'image du logo */
+    display: block; /* Affichage de bloc pour centrer correctement l'image */
+    margin: 0 auto; /* Marge automatique pour centrer l'image */
+}
+
+.nav {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding-left: 0; /* Supprimer le décalage gauche */
+}
+
+.nav-item {
+    margin-bottom: 10px; /* Espacement entre les éléments de menu */
+}
+
+.nav-link {
+    display: block; /* Afficher en bloc pour occuper toute la largeur */
+    padding: 10px; /* Espacement intérieur */
+    color: #807c7c; /* Couleur du texte */
+    text-decoration: none; /* Supprimer la décoration du lien */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #343a40; /* Couleur de fond au survol */
+}
+
+.active .nav-link {
+    background-color: #007bff; /* Couleur de fond de l'élément de menu actif */
+}
+
+.material-icons {
+    vertical-align: middle; /* Alignement vertical au milieu */
+    margin-right: 10px; /* Marge à droite pour l'icône */
+}

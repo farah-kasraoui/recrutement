@@ -1,0 +1,90 @@
+
+<div class="wrapper">
+    <app-navbar></app-navbar> 
+    <div class="page-header section-dark" style="background-image: url('assets/img/image_4.jpg');">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <h4 class="presentation-title">TESTS RECRUTEMENT</h4>
+                    <div class="fog-low">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                    <div class="fog-low right">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="presentation-subtitle text-center">Bienvenue sur notre plateforme <br>de test psychotechnique </h2>
+            </div>
+        </div>
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+
+    </div>
+    <div class="main">
+       
+
+       <div class="section" id="carousel">
+          <div class="container">
+              <div class="tim-title">
+                
+              </div>
+              <div class="row">
+                  <div class="col-md-8 mr-auto ml-auto">
+                      <div class="card page-carousel">
+                          <ngb-carousel>
+                              <ng-template ngbSlide>
+                                  <img src="./assets/img/image_5.jpg" alt="Random first slide">
+                                  <div class="carousel-caption">
+                                      <p style="color: crimson;"><b>Tests psychotechniques</b></p>
+                                  </div>
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                  <img src="./assets/img/img_7.jpg" alt="Random second slide">
+                                  <div class="carousel-caption">
+                                      <p p style="color: crimson;">Tests de raisonnement logiques</p>
+                                  </div>
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                  <img src="./assets/img/image_4.jpg" alt="Random third slide">
+                                  <div class="carousel-caption">
+                                      <p p style="color: crimson;">Tests d'intelligences</p>
+                                  </div>
+                              </ng-template>
+                          </ngb-carousel>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Bienvenue dans notre espace recrutement</h2><br/>
+                        <p class="description content">
+                            Cette plateforme est dédiée au processus de recrutement du groupe ELLOUMI.<br>
+                            Nous sommes ravis de vous accueillir dans cet espace où nous évaluons et identifions les talents qui contribueront à façonner l'avenir de notre entreprise. Chez notre groupe, l'excellence est notre norme, et nous croyons que chaque candidat a le potentiel de s'épanouir au sein de notre équipe dynamique.
+                            Nous sommes convaincus que cette étape de votre candidature vous permettra de démontrer votre potentiel et de faire valoir vos compétences uniques.
+                            Vos résultats à ces tests revêtent une importance cruciale, car ils nous permettront de mieux faire correspondre le profil du poste avec votre propre profil.
+                            Nous vous encourageons à aborder ces tests avec assurance, sachant que vos performances joueront un rôle clé dans le processus de recrutement. Notre objectif est de créer des correspondances harmonieuses entre les profils des candidats et des postes, de manière à favoriser la réussite mutuelle.
+                            Nous vous remercions de votre participation et vous souhaitons bonne chance dans ces évaluations. <br/>
+                            
+
+
+                        </p><br/>
+                        <a id="voirPlusButton" class="btn btn-danger btn-round" onclick="toggleContent()">Voir plus</a>
+                        <a id="voirMoinsButton" class="btn btn-outline-danger btn-round" style="display:none;" onclick="toggleContent()">Voir moins</a>
+                        
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="icons-container">
+                            <img src="./assets/img/img_1.jpg" alt="" style="width: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-footer *ngIf="removeFooter()"></app-footer>  
+</div>

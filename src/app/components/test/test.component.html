@@ -1,0 +1,356 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tests psychotechniques</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/src/assets/css/Bootstrap/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+  
+  </head>
+  <body>
+    <main class="overflow-hidden">
+      <!-- Step Bar -->
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+
+      <!-- Form Start -->
+      <section class="container steps">
+        <form
+          class="show-section"
+          id="stepForm"
+          novalidate
+          onsubmit="return false"
+        >
+          <!-- Step 1 -->
+          <fieldset id="step1">
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Question Area -->
+                <div class="qArea">
+                  <!-- Question Number -->
+                  <h4 class="qNumber">
+                    Question <span id="currentStep">1</span>/<span
+                      id="totalSteps"
+                      >4</span
+                    >
+                  </h4>
+
+                  <!-- Question -->
+                  <h1 class="question">
+                      Je ne suis pas du genre à me faire du souci.
+                  </h1>
+
+                  <!-- Question BG -->
+                  <img
+                    class="QBG"
+                    src="../assets/img/QuestionBG.png"
+                    alt="QuestionBG"
+                  />
+                </div>
+
+                <!-- Step 1 Next Prev -->
+                <div class="nextPrev">
+                  <button type="button" class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button type="button" class="next" id="step1btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Options -->
+              <div class="col-md-5">
+                <div class="options">
+                  <div class="option animate">
+                    <input type="radio" name="op2" value="Fortement en désaccord" />
+                    <label>Fortement en désaccord</label>
+                    <span>FD</span>
+                  </div>
+                  <div class="option animate delay-100">
+                    <input type="radio" name="op2" value="Désaccord" />
+                    <label>Désaccord</label>
+                    <span>D</span>
+                  </div>
+                  <div class="option animate delay-200">
+                    <input type="radio" name="op2" value="Neutre" />
+                    <label>Neutre</label>
+                    <span>N</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="En accord" />
+                    <label>En accord</label>
+                    <span>A</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="Fortement en accord" />
+                    <label>Fortement en accord</label>
+                    <span>FA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset id="step2">
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Question Area -->
+                <div class="qArea">
+                  <!-- Question Number -->
+                  <h4 class="qNumber">
+                    Question <span id="currentStep">2</span>/<span
+                      id="totalSteps"
+                      >4</span
+                    >
+                  </h4>
+
+                  <!-- Question -->
+                  <h1 class="question"> J’ai une imagination très  active. </h1>
+
+                  <!-- Question BG -->
+                  <img
+                    class="QBG"
+                    src="../../assets/img/QuestionBG.png"
+                    alt="QuestionBG"
+                  />
+                </div>
+
+                <!-- Step 1 Next Prev -->
+                <div class="nextPrev">
+                  <button type="button" class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button type="button" class="next" id="step2btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Options -->
+              <div class="col-md-5">
+                <div class="options">
+                  <div class="option animate">
+                    <input type="radio" name="op2" value="Fortement en désaccord" />
+                    <label>Fortement en désaccord</label>
+                    <span>FD</span>
+                  </div>
+                  <div class="option animate delay-100">
+                    <input type="radio" name="op2" value="Désaccord" />
+                    <label>Désaccord</label>
+                    <span>D</span>
+                  </div>
+                  <div class="option animate delay-200">
+                    <input type="radio" name="op2" value="Neutre" />
+                    <label>Neutre</label>
+                    <span>N</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="En accord" />
+                    <label>En accord</label>
+                    <span>A</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="Fortement en accord" />
+                    <label>Fortement en accord</label>
+                    <span>FA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset id="step3">
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Question Area -->
+                <div class="qArea">
+                  <!-- Question Number -->
+                  <h4 class="qNumber">
+                    Question <span id="currentStep">3</span>/<span
+                      id="totalSteps"
+                      >4</span
+                    >
+                  </h4>
+
+                  <!-- Question -->
+                  <h4 class="question">
+                      J’ai  tendance  à  être  cynique  et  septique en  ce  qui  concerne  les  intentions  des  autres. 
+                  </h4>
+
+                  <!-- Question BG -->
+                  <img
+                    class="QBG"
+                    src="../../assets/img/QuestionBG.png"
+                    alt="QuestionBG"
+                  />
+                </div>
+
+                <!-- Step 1 Next Prev -->
+                <div class="nextPrev">
+                  <button type="button" class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button type="button" class="next" id="step3btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Options -->
+              <div class="col-md-5">
+                <div class="options">
+                  <div class="option animate">
+                    <input type="radio" name="op2" value="Fortement en désaccord" />
+                    <label>Fortement en désaccord</label>
+                    <span>FD</span>
+                  </div>
+                  <div class="option animate delay-100">
+                    <input type="radio" name="op2" value="Désaccord" />
+                    <label>Désaccord</label>
+                    <span>D</span>
+                  </div>
+                  <div class="option animate delay-200">
+                    <input type="radio" name="op2" value="Neutre" />
+                    <label>Neutre</label>
+                    <span>N</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="En accord" />
+                    <label>En accord</label>
+                    <span>A</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="Fortement en accord" />
+                    <label>Fortement en accord</label>
+                    <span>FA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <!-- Step 4 -->
+          <fieldset id="step4">
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Question Area -->
+                <div class="qArea">
+                  <!-- Question Number -->
+                  <h4 class="qNumber">
+                    Question <span id="currentStep">4</span>/<span
+                      id="totalSteps"
+                      >4</span
+                    >
+                  </h4>
+
+                  <!-- Question -->
+                  <h1 class="question">Je suis réputé(e) pour ma prudence et  mon  bon  sens.</h1>
+
+                  <!-- Question BG -->
+                  <img
+                    class="QBG"
+                    src="../../assets/img/QuestionBG.png"
+                    alt="QuestionBG"
+                  />
+                </div>
+
+                <!-- Step 4 Next Prev -->
+                <div class="nextPrev">
+                  <button type="button" class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button type="button" class="next" id="sub">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Options -->
+              <div class="col-md-5">
+                <div class="options">
+                  <div class="option animate">
+                    <input type="radio" name="op2" value="Fortement en désaccord" />
+                    <label>Fortement en désaccord</label>
+                    <span>FD</span>
+                  </div>
+                  <div class="option animate delay-100">
+                    <input type="radio" name="op2" value="Désaccord" />
+                    <label>Désaccord</label>
+                    <span>D</span>
+                  </div>
+                  <div class="option animate delay-200">
+                    <input type="radio" name="op2" value="Neutre" />
+                    <label>Neutre</label>
+                    <span>N</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="En accord" />
+                    <label>En accord</label>
+                    <span>A</span>
+                  </div>
+                  <div class="option animate delay-300">
+                    <input type="radio" name="op1" value="Fortement en accord" />
+                    <label>Fortement en accord</label>
+                    <span>FA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- result -->
+    <div class="loadingresult">
+      <img src="../assets/img/loading.gif" alt="loading" />
+    </div>
+
+    <div class="main thankyou-page">
+      <div class="main-inner">
+        <div class="logo">
+
+          <div class="logo-text"><img src="/src/assets/img/LOGO-COFAT.png" alt="" /></div>
+        </div>
+        <article>
+          <h1><span>Merci</span> Pour ce temps!</h1>
+          <span>Vos réponses ont été bien reçues</span>
+          <p>
+         
+          </p>
+        </article>
+
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-google"></i>Google</a>
+          <a href="#"><i class="fa-brands fa-apple"></i>Apple ID</a>
+          <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        </div>
+        <div class="mb-5 back-home">
+          <a href="file:///D:/PLATEFORMERECRUTEMENT/Interface_questions/index.html">Accueil</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="error"></div>
+   
+  </body>
+</html>
+
+
+

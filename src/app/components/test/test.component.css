@@ -1,0 +1,14 @@
+.steps-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+ }
+ 
+ fieldset {
+    flex: 0 0 100%;
+    display: none;
+ }
+ 
+ fieldset.active {
+    display: block;
+ }

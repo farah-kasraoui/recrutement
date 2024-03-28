@@ -1,0 +1,90 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .qArea {
+    height: 500px;
+  }
+  .qNumber {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .question {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .options .option {
+    width: 80%;
+    height: 100px;
+  }
+  .option label {
+    font-size: 25px;
+  }
+  .option span {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .question {
+    font-size: 24px;
+  }
+  .qArea {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .options .option {
+    width: 100%;
+  }
+  .options {
+    margin-right: 0;
+  }
+  .qArea {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .qArea {
+    height: 400px;
+  }
+  .question {
+    margin-bottom: 40px;
+  }
+  .nextPrev {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000000;
+  }
+  .nextPrev button {
+    border-radius: 0 !important;
+  }
+  .options {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .qArea {
+    height: 180px;
+  }
+  .qNumber {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .question {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
